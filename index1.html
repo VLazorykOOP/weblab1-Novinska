@@ -15,7 +15,24 @@
             margin: 0 auto; 
             padding: 20px;
         }
-      
+        .menu{
+          list-style-type: none;
+          padding-left: 0;
+          margin-left: 0;
+        } 
+        .menu a{
+          text-decoration: none;
+          font-family: sans-serif;
+          color:rgb(255, 255, 255);
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: lightsteelblue;
+          border-bottom: 5px solid blueviolet;
+        }
+        .menu li{
+          display: inline;
+        }
+
         h1 {
           margin-bottom: -15px; 
          } 
@@ -37,7 +54,6 @@
           margin-bottom: 50px;
         }
 
-        /*розміщую текст з правого боку від фото*/
         .sign {
           float: right; 
           padding: 7px;
@@ -66,11 +82,18 @@
       .phone-number {
         white-space: nowrap;
     }
+    
         </style>
         </head>
         <body>
+          <div>
+          <ul class="menu">
+          <li><a href="index2.html">Сервіс</a><li>
+            <li><a href="index3.html">Новини</a></li>
+          </ul>
+          </div>
           <div clsss="container">
-            <h1 align="center"> Вітаю вас на сторінці перекупщика! </h1>
+            <h1 align="center"> Вітаю вас на основній сторінці нашого сервісу </h1>
            <h3 id="my-heading" align="center"> тут я розповім все про свою фірму та навіть трохи більше</h3>
            <img src="./images/a111.jpg" height="300" width="600">
             <p style ="margin-left: 20px;" > Мене звати Анастасія і я володію найвідомішим автопарком в Україні "AUTO-машіна". Компанія "AUTO-машіна" пропонує вам широкий вибір автомобілів , абсолютно нових (та вживаних звісно також) пригнаних з різних куточків світу.AUTO-машіна - це автомобільний сайт, який добре підійде цінителям простоти і зручності. У нас є хороший вибір машин з різних регіонів України. Тепер не потрібно добиратися до авторинку шляхом різних варіацій транспортрих коштів, адже на авторіа біз ви знайдете абсолютно ті ж машини у продажу, що і на базарі, але ви не зможете не помітити один дуже важливий пункт - зручність. </p>
@@ -88,9 +111,8 @@
           <a href="https://www.facebook.com/profile.php?id=61552051288247"target="_blank"> 
             <img src="images/facebook_icon_130940.png" width="50" height="50" style="margin-right: 770px">
           </a>
-          <a href="C:\Users\pc\github-classroom\VLazorykOOP\weblab1-Novinska\index2.html" class="button">AUTO-машіна</a>
         </div>
         <p style="margin-left: 20px;"> <small id="additional-info" title="Додаткова інформація" lang="uk"> Якщо на момент обміну аналогічного товару немає у продажу, споживач має право або придбати будь-які інші товари з наявного асортименту з відповідним перерахуванням вартості, або розірвати договір та одержати назад гроші у розмірі вартості повернутого товару, або здійснити обмін товару на аналогічний при першому ж надходженні відповідного товару в продаж. Продавець зобов’язаний у день надходження товару в продаж повідомити про це споживача, який вимагає обміну товару.</small> </p>
-        <p align="center"> <small> <i lang="en" id="concept-text" class="highlighted-text">Виникли питання або хочете покращити наш сервіс ? Тодізвертайтеся за номером: <span class="phone-number">+380660106666</span></i></p></small>
+        <p align="center"> <small> <i lang="en" id="concept-text" class="highlighted-text">Виникли питання або хочете покращити наш сервіс ? Тоді звертайтеся за номером: <span class="phone-number">+380660106666</span></i></p></small>
       </body>
      </html>
