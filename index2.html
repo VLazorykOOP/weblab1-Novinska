@@ -9,14 +9,43 @@
                 color: white;
                 font-family: sans-serif;
               }
-              h1{
-                margin-bottom: 50px;
-                text-shadow: rgb(135, 182, 228) 1px 0 10px;
+            .container {
+                display: flex; 
+                align-items: center; 
+            }
+            .menu{
+                list-style-type: none;
+                padding-left: 0;
+                margin-left: 0;
+              } 
+              .menu a{
+                text-decoration: none;
+                font-family: sans-serif;
+                color:rgb(255, 255, 255);
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: lightsteelblue;
+                border-bottom: 5px solid blueviolet;
               }
-              p{
-                margin-bottom: 50px;
+              .menu li{
+                display: inline;
               }
-              i {
+            .image {
+                margin-right: 30px; 
+            }
+           .border{
+             margin-left: 80px;
+             font-size: 19px;
+             margin-bottom: 75px;
+             background: #b8adff; 
+             color: rgb(0, 0, 0); 
+             padding: 6px; 
+             display:inline;
+            }
+            p{
+                margin-bottom: 50px;
+            }
+            i {
                 border: solid rgb(248, 243, 243);
                 border-width: 0px 3px 3px 0px;
                 display: inline-block;
@@ -26,9 +55,6 @@
             .down {
                 transform: rotate(45deg);
                 -webkit-transform: rotate(45deg);
-            }
-            h3{
-                margin-bottom: 75px;
             }
             .image-container {
                 display: flex; 
@@ -42,10 +68,19 @@
         </style>
     </head>
     <body>
-        <h1 style="margin-left: 100px;">AUTO-машіна</h1>
-        <h2 align="center">Вітаємо вас на основній сторінці нашого автопарку!</h2>
+        <div>
+            <ul class="menu">
+            <li><a href="index2.html">Сервіс</a><li>
+            <li><a href="index3.html">Новини</a></li>
+            <li><a href="index1.html">Головна</a></li>
+            </ul>
+            </div>
+        <div class="container">
+          <img src="images/photo_2023-10-03_22-03-24.jpg" width="250" height="140">
+         <h1 style="font-style: italic; margin-left: 30px;">Вітаємо вас на основній сторінці нашого автопарку!</h1>
+        </div >
         <p align="center"> <abbr title="Dream cars" lang="en" class="abbreviation">Ваша машина мрії вже чекає на вас</abbr></p>
-        <h3 style="margin-left: 80px;"> <strong dir="rtl" style="font-size: 19px;"> Каталог вживаних авто </strong> <i class="arrow down"></i></h3>
+        <h3 class="border"><strong dir="rtl" >Каталог вживаних авто </strong><i class="arrow down"></i></h3>
         <div class="image-container">
             <div>
                 <h3 style="margin-bottom: 20px;">Renault megane 2010 </h3>
@@ -91,7 +126,7 @@
             </ol>
             </div>
         </div>
-        <h3 style="margin-left: 80px;"> <strong dir="rtl" style="font-size: 19px;"> Каталог нових авто </strong> <i class="arrow down"></i></h3>
+        <h3 class="border"> <strong dir="rtl" > Каталог нових авто </strong> <i class="arrow down"></i></h3>
         <div class="image-container">
             <div>
                 <h3 style="margin-bottom: 20px;"> Toyota RAV4 </h3>
@@ -136,7 +171,7 @@
                         </ol>
                         </div>
                     </div>
-                    <blockquote align="center" style="font-style: italic; opacity: 0.5; margin-top: 300px;" dir="ltr" id="my-quote"> Дякуємо , що обираєте нас!)</blockquote>
+                    <blockquote align="center" style="font-style: italic; opacity: 0.5; margin-top: 100px;" dir="ltr" id="my-quote"> Дякуємо , що обираєте нас!)</blockquote>
                     
                     <p align="center" style="font-size: smaller; opacity: 0.5; margin-top: 50px;">Наша контактна інформація : </p>
                 <address align="center" style="font-style:normal; font-size: smaller; opacity: 0.5; margin-top: 2.5px;" dir="ltr">номер телефону : +380958970192</address>
