@@ -10,6 +10,23 @@
             color: white;
             font-family: Arial, sans-serif;
         }
+        .menu{
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 0;
+          } 
+          .menu a{
+            text-decoration: none;
+            font-family: sans-serif;
+            color:rgb(255, 255, 255);
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: lightsteelblue;
+            border-bottom: 5px solid blueviolet;
+          }
+          .menu li{
+            display: inline;
+          }
         .news-article {
             border: 1px solid white;
             padding: 20px;
@@ -26,10 +43,10 @@
         }
         .news-article h2 {
             color: #ffffff; 
-            text-shadow: rgb(251, 255, 0) 1px 0 10px;
+            text-shadow: rgb(96, 206, 239) 1px 0 10px;
         }
         .news-article a {
-            color: white;
+            color: rgb(255, 255, 255);
             text-decoration: none;
         }
         .text-left {
@@ -61,6 +78,13 @@
     </style>
 </head>
 <body>
+    <div>
+        <ul class="menu">
+        <li><a href="index2.html">Сервіс</a><li>
+        <li><a href="index3.html">Новини</a></li>
+        <li><a href="index1.html">Головна</a></li>
+        </ul>
+        </div>
     <div class="news-article">
         <img src="images/photo_2023-10-03_22-03-24.jpg" align="left" hspace="10" ismap width="350" height="350">
         <div class="article-content">
@@ -76,7 +100,7 @@
         <div class="content-wrapper">
             <img src="images/car/audi_rs-q8__508253064f.jpg" width="500" height="500">
             <div class="text-left">
-                <p style="font-size: 40px;">Audi RS Q8 - це вражаючий і швидкий спортивний кросовер від німецького виробника автомобілів Audi. Ось короткий огляд основних характеристик цієї моделі:</p>
+                <p>Audi RS Q8 - це вражаючий і швидкий спортивний кросовер від німецького виробника автомобілів Audi. Ось короткий огляд основних характеристик цієї моделі:</p>
                 <ol style="list-style-type: disc;">
                     <li>Потужний Двигун: RS Q8 оснащений потужним 4.0-літровим V8-бензиновим двигуном з турбонаддувом. Цей двигун здатний розвивати вражаючу потужність, що робить цей кросовер надзвичайно швидким.</li>
                     <li>Вражаюча Динаміка: Завдяки потужності і системі керування Audi Quattro, RS Q8 може розганятися від 0 до 100 км/год всього за кілька секунд. Він також має велику максимальну швидкість.</li>
