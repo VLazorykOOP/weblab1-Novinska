@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>*{
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #818181 /*linear-gradient(to bottom, #87CEEB, #1E90FF)*/;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    margin-top: 20px;
+}
+.portfolio h3, li{
+    color: #fff;
+}
+
+.product-website h3, a{
+    color: #fff;
+}
+.news-website  dt, a{
+    color: #fff;
+}
+.block{
+    height: 50px;
+    margin:0 auto;
+    background: #007BFF;
+}
+.block p{
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+    text-align:center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-top: 15px;
+    animation: text 25s infinite linear;
+    padding-left: 100%;
+    white-space: nowrap;
+    word-spacing: 10px;
+}
+@keyframes text {
+    0%{
+      transform: translate(0, 0);
+    }
+    
+    100%{
+      transform: translate(-100%, 0);
+    }
+}
+</style>
+<body>
+    <nav>
+        <h2>Меню</h2>
+        <ul>
+            <li><a href="#portfolio">Портфоліо</a></li>
+            <li><a href="#product-website">Веб-сайт продукту</a></li>
+            <li><a href="#news-website">Сайт новин</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="portfolio">
+            <h3>Портфоліо</h3>
+            <ol>
+                <li>Проект 1</li>
+                <li>Проект 2</li>
+                <li>Проект 3</li>
+            </ol>
+        </section>
+
+        <section id="product-website">
+            <h3>Веб-сайт продукту</h3>
+            <ul>
+                <li><a href="#">Продукт 1</a></li>
+                <li><a href="#">Продукт 2</a></li>
+                <li><a href="#">Продукт 3</a></li>
+            </ul>
+        </section>
+
+        <section id="news-website">
+            <h3>Сайт новин</h3>
+            <dl>
+                <dt>Категорія 1</dt>
+                <dd><a href="#">Новина 1</a></dd>
+                <dd><a href="#">Новина 2</a></dd>
+
+                <dt>Категорія 2</dt>
+                <dd><a href="#">Новина 3</a></dd>
+                <dd><a href="#">Новина 4</a></dd>
+            </dl>
+        </section>
+    </main>
+
+
+    <div class='block'><p>Завітайте на наш сайт і оберіть своє авто</p></div> 
+
+</body>
+</html>

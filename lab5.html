@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>AUTO-машіна</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgba(0, 0, 0, 0.818);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0; 
+        }
+
+        #menu {
+            list-style: none;
+            display: table;
+            background-color: #000000;
+            width: 100%;
+            margin: 0; 
+            padding: 0; 
+            text-align: center; 
+        }
+
+        #menu li {
+            display: table-cell;
+            padding: 20px;
+        }
+
+        #menu li a {
+            color: rgb(255, 251, 251);
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        #menu li:hover {
+            background: #00000062;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            margin-top: 0; 
+        }
+        .container img {
+            margin-right: 50px;
+            border-radius: 10px;
+        }
+
+        .emblem{
+            width: 350px;
+            height: 150px;
+
+        }
+
+        img{
+            width: 250px;
+            height: 250px;
+            margin-right: 40px;
+        }
+
+        a[href="index2.html"] {
+            background-color: #6f696762;
+            text-shadow: 1px 1px 1px rgb(255, 255, 255); 
+            color: #ffffff;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #1b1a1a;
+            margin-top: 30px;
+            margin-bottom: 0;
+            margin-left: 70px;
+        }
+        .quots1 {
+            margin-top: 5px;
+            margin-bottom: 80px;
+            font-size: 23px;
+            font-family: system-ui;
+            color: #00000076;
+            margin-left: 300px;
+        }
+        .quots2 {
+            margin-top: 5px;
+            margin-bottom: 80px;
+            font-size: 23px;
+            font-family: system-ui;
+            color: #00000076;
+            text-align: center;
+
+        }
+
+        .border {
+            color: #ffffff;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+
+        h3{
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+
+        i {
+            border: 1px solid rgb(248, 243, 243); 
+            border-width: 0px 3px 3px 0px;
+            display: inline-block;
+            padding: 3px;
+            margin-right: 30px;
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        .header{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+            margin-left: 40px; 
+
+        }
+        ul{
+            list-style-type: none;
+        }
+
+        #black-background {
+            background-color: black;
+            padding: 0;
+        }
+
+        .image-container {
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-left: 300px;
+            margin-bottom: 50px;
+        }
+
+        h3{
+            margin-left: 40px;
+            
+        }
+
+        .car-info {
+            display: flex;
+            align-items: center;
+            background: #5b5e8ae6;
+            border: none;
+            border-radius: 5px;
+            padding: 70px;
+            width: 750px;
+
+        }
+
+        .horizontal-line {
+            border-top: 100px solid white;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .price {
+            margin-bottom: 15px;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .text-info {
+            text-align: left;
+        } 
+        .reg{
+            text-align: center;
+            color:#5b5e8ae6;
+            text-decoration: underline;
+        }
+        .form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .form input, .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        .form button {
+            background-color: #5b5e8ae6;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form button:hover {
+            background-color: #1b57beca;
+        }  
+        blockquote{
+            text-align: center;
+            font-style: italic;
+            opacity: 0.5;
+            margin-top: 100px;
+        }
+        .inform{
+            text-align: center;
+            font-size: smaller;
+            opacity: 0.5;
+            margin-top: 20px;
+        }
+        address{
+            text-align: center;
+            font-style: normal;
+            font-size: smaller;
+            opacity: 0.5;
+            margin-top: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a href="index1.html">Головна</a></li> 
+            <li><a href="index2.html">Сервіс</a></li>
+            <li><a href="index3.html">Новини</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img class="emblem" src="image/carsss.jpg" >
+        <div>
+            <h1>Вітаємо вас на основній сторінці нашого автопарку!</h1>
+            <p class="quots1"> Ваша машина мрії вже чекає на вас</p>
+            <p class="quots2">Якість і Безпека: Ваш Надійний Маркетплейс... У сучасному світі інтернет-торгівля набуває все більшої популярності. Однак, як знайти платформу, якій можна довіритись? Місце, де кожний продавець є перевіреним і де ви можете знайти найкращі товари та послуги без зайвих хвилювань? Наша платформа — це відповідь.Перевірені Продавці: Безпека Передусім</p>
+        </div>
+    </div>
+    <h1 class="header"> Catalogs</h1>
+
+
+    <div id="black-background">
+        <h3 class="border">Каталог вживаних авто</h3>
+        <div class="image-container">
+            <div class="car-info">
+                <img src="image/car/renault_megane__517296195f.jpg">
+                <div class="text-info">
+                    <h3>Renault megane 2010</h3>
+                    <ul style="list-style-type: none;">
+                        <li class="price">7999 $</li>
+                        <li>RENAULT</li>
+                        <li>Легкова, дизель</li>
+                        <li>пригнана з Бельгії</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="car-info">
+                <img src="image/car/audi_a6__517493527f.jpg" >
+                <div class="text-info">
+                    <h3>Audi А6 2019</h3>
+                    <ol>
+                        <li class="price">60 000 $</li>
+                        <li>AUDI</li>
+                        <li>Легкова</li>
+                        <li>пригнана з Америки</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="car-info">
+                <img src="image/car/volkswagen_tiguan__513741891f.jpg" >
+                <div class="text-info">
+                    <h3 >Volkswagen Tiguan 2021</h3>
+                    <ol>
+                        <li class="price">41 400 $</li>
+                        <li>Volkswagen</li>
+                        <li>Легкова , дизель</li>
+                        <li>пригнане з Швеції</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="car-info">
+                <img src="image/car/nissan-qashqai__2019671-620x465x72.jpg" >
+                <div class="text-info">
+                    <h3>Nissan Qashqai 2023</h3>
+                    <ol>
+                        <li class="price">25 500 $</li>
+                        <li>NISSAN</li>
+                        <li>Легкова , Електро</li>
+                        <li>Китай</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <hr class="horizontal-line">
+        <h3 class="border">Каталог нових авто</h3>
+        <div class="image-container">
+            <div class="car-info">
+                <img src="image/car/toyota-rav4__2130069-620x465x72.jpg" >
+                <div class="text-info">
+                    <h3>Toyota RAV4</h3>
+                    <ol>
+                        <li class="price">30 000 $</li>
+                        <li>Toyota</li>
+                        <li>Легкова ,бензин</li>
+                        <li>постачальник - Бельгія</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="car-info">
+                <img src="image/car/toyota-land-cruiser-prado__1072164-620x465x72.jpg" >
+                <div class="text-info">
+                    <h3>Toyota Land Cruiser Prado</h3>
+                    <ol>
+                        <li class="price">60 500 $</li>
+                        <li>Toyota</li>
+                        <li>Позашляховик ,бензин/дизель</li>
+                        <li>постачальник - Бельгія</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="car-info">
+                <img src="image/car/bmw_5-series__515852166f.jpg" >
+                <div class="text-info">
+                    <h3>BMW 5 Series</h3>
+                    <ol>
+                        <li class="price">40 000 $</li>
+                        <li>BMW</li>
+                        <li>Легкова ,бензин</li>
+                        <li>постачальник - Канада</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="car-info">
+                <img src="image/car/lexus-rx__2119662-620x465x72.jpg" >
+                <div class="text-info">
+                    <h3>Lexus RX 350</h3>
+                    <ol>
+                        <li class="price">25 500 $</li>
+                        <li>NISSAN</li>
+                        <li>Легкова , Електро</li>
+                        <li>Китай</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="reg">Зареєструйся та надішли відгук , якщо тобі є що сказати:</h2>
+       <form action="process_form.php" method="post" enctype="multipart/form-data" class="form" novalidate>
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" title="Формат: 123-45-678" required>
+
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date" required>
+
+        <textarea id="message" name="message" rows="4" maxlength="500" required></textarea>
+
+        <button type="submit" formtarget="_blank" formmethod="post">Відправити</button>
+    </form>
+
+    <blockquote  dir="ltr" id="my-quote">Дякуємо, що обираєте нас!</blockquote>
+    <p class="inform">Наша контактна інформація :</p>
+    <address dir="ltr">номер телефону : +380958970192</address>
+    <address dir="ltr">gmail : novinska.anastasiia@gmail.com</address>
+</body>
+</html>
